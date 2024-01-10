@@ -1,0 +1,15 @@
+﻿REGEDIT
+; 您的安裝程式會使用此 .REG 檔。
+; 如果無法使用安裝程式，會使用對 CWinApp::RegisterShellFileTypes 
+; 與 COleObjectFactory::UpdateRegistryAll 的呼叫，
+; 自動在您的 InitInstance 中登錄下列項目。
+
+HKEY_CLASSES_ROOT\.Maze = Maze41243213.Document
+HKEY_CLASSES_ROOT\Maze41243213.Document\shell\open\command = Maze41243213.EXE %1
+HKEY_CLASSES_ROOT\Maze41243213.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\Maze41243213.Document\shell\open\ddeexec\application = Maze41243213
+    ; 注意: 應用程式是選擇項
+    ; (預設為 "command" 中的應用程式名稱)
+
+HKEY_CLASSES_ROOT\Maze41243213.Document = Maze41243213.Document
+
